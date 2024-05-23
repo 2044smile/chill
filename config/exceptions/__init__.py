@@ -1,0 +1,1 @@
+from .exception import OvercapacityOfStudents, TerminatedHall, TakeYourOwnCourse
