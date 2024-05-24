@@ -1,1 +1,1 @@
-from .exception import OvercapacityOfStudents, TerminatedHall, TakeYourOwnCourse
+from .exception import OvercapacityOfStudents, TerminatedHall, TakeYourOwnCourse, HallNotFound, X_USER_IDOrX_ROOM_IDNotFound

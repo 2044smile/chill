@@ -17,3 +17,13 @@ class TerminatedHall(APIException):
 class TakeYourOwnCourse(APIException):
     status_code = 400
     default_detail = 'You cannot enroll in a lecture you have created'
+
+
+class HallNotFound(APIException):
+    status_code = 404
+    default_detail = 'Hall not found'
+
+
+class X_USER_IDOrX_ROOM_IDNotFound(APIException):
+    status_code = 400
+    default_detail = 'Invalid X-ROOM-ID or X-USER-ID'
