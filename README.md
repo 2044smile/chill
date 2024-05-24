@@ -9,7 +9,7 @@
   - 회원 정보 (status [student, teacher, admin])
 - config/exceptions folder 예외 처리 구현 🚀
 
-## Docker
+## Docker 🚀
 
 - Docker 를 구현하여 테스트 진행 시 어느 환경에서든 손 쉽게 테스트를 진행할 수 있습니다.
 
