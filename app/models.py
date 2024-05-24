@@ -27,7 +27,7 @@ class Hall(BaseModel):
     attend_code = models.CharField(max_length=8, verbose_name='강의장 참석을 위한 코드', default=0)
     x_room_id = models.CharField(max_length=16, verbose_name='강의장 ID', default=0)
 
-    is_closed = models.BooleanField(default=True, verbose_name="강의장 종료")
+    is_closed = models.BooleanField(default=False, verbose_name="강의장 종료")
         
     def save(self, *args, **kwargs):
         if self.attend_code in ['0', 0]:
