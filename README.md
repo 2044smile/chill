@@ -9,6 +9,8 @@ docker build .
 docker images
 docker run -it -p 8001:8001 <IMAGE ID>
 
+# URL 127.0.0.1:8001/swagger/
+
 # POST /account/
 {
   "user_id": "teacher4",
