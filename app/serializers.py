@@ -6,7 +6,7 @@ class HallSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Hall
-        fields = ["id", "teacher", "available", "attend_code", "is_closed"]
+        fields = ["id", "teacher", "available", "attend_code", "x_room_id", "is_closed"]
         extra_kwargs = {
             'attend_code': {'read_only': True},
             'x_room_id': {'read_only': True}

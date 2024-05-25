@@ -3,10 +3,41 @@
 ## Started
 
 ```cmd
-1. db.sqlite3 붙여넣기
-2. docker build .
-3. docker images
-4. docker run -it -p 8001:8001 <IMAGE ID>
+# db.sqlite3 붙여넣기
+
+docker build .
+docker images
+docker run -it -p 8001:8001 <IMAGE ID>
+
+# POST /account/
+{
+  "user_id": "teacher4",
+  "password": "teacher4",
+  "status": "teacher"
+}
+## RESPOSNE 
+{
+  "id": 14,
+  "user_id": "teacher4",
+  "status": "teacher",
+  "x_user_id": "39LI0GQcZ9"
+}
+
+# POST /hall/
+{
+  "teacher": 14,
+  "available": 50,
+  "is_closed": false
+}
+## RESPONSE
+{
+  "id": 4,
+  "teacher": 14,
+  "available": 50,
+  "attend_code": "hV3qM",
+  "x_room_id": "5EFgLid2FI",
+  "is_closed": false
+}
 ```
 
 ## Additional description
