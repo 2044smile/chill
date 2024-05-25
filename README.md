@@ -1,5 +1,14 @@
 # chill
 
+## Started
+
+```cmd
+1. db.sqlite3 붙여넣기
+2. docker build .
+3. docker images
+4. docker run -it -p 8001:8001 <IMAGE ID>
+```
+
 ## Additional description
 
 - Hall(강의장) Model 내에 정의 된 save() 메서드를 활용 했습니다. 🚀
